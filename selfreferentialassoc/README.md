@@ -18,6 +18,7 @@
 			has_many :followed, :through => :follows
 			has_many :inverse_follows, :class_name => "Follow", :foreign_key => "followed_id"
 			has_many :followers, :through => :inverse_follows, :source => :user
-	```
-## In the Starter folder, you'll find a very basic Rails app ready for self referential associations
-## In the Solution folder, you'll find that same Rails app with Follows implemented
+```
+
+### In the Starter folder, you'll find a very basic Rails app ready for self referential associations
+### In the Solution folder, you'll find that same Rails app with Follows implemented
