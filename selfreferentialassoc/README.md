@@ -4,8 +4,10 @@
 	* Make associations like follows, friendships, etc.
 	* Great when you have users interacting
 	* Adds one table, a controller, a model, and a few lines to your User model
-	* Example: The top of my User Model from my Comic Book Library, both the Lendee/Lender and Follows/Followed parts are self referential
-```ruby class User < ActiveRecord::Base
+	* Example: The top of my User Model from my Comic Book Library
+	 both the Lendee/Lender and Follows/Followed parts are self referential
+```ruby
+			class User < ActiveRecord::Base
 			has_many :comics, through: :ownerships
 			has_many :ownerships
 			has_many :lendees
