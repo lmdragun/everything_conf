@@ -1,5 +1,5 @@
-# Self Referential Associations
-## What is it?
+== Self Referential Associations
+=== What is it?
 	* A way to connect a table to itself
 	* Make associations like follows, friendships, etc.
 	* Great when you have users interacting
