@@ -1,13 +1,20 @@
-class Users < ApplicationController::Base
+class FollowsController < ApplicationController
 
-	def index
-		@user = User.find(params[:id])
-		@all_users = User.all
-		@follows = Follows.all
-	end
+	def create
+    @user = User.find(params[:followed_id])
+    if current_user.follow(@user)
+      flash[:notice] = "Followed user."
+      redirect_to current_user
+    else
+      flash[:error] = "Unable to follow user."
+      redirect_to current_user
+    end
+  end
 
-	def show
-		
-	end
-
+  def destroy
+    @follow = current_user.follows.find(params[:id])
+    @follow.destroy
+    flash[:notice] = "Stopped following user."
+    redirect_to current_user
+  end
 end

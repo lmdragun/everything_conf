@@ -1,28 +1,9 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+These are documents for a presentation for General Assembly's Everything Conf. It contains
 
-Things you may want to cover:
+* A Solution folder, with a Rails app setup with Self-Referential Associations
 
-* Ruby version
+* A Starter folder, with a Rails app setup to have a Self-Referential Association added in
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+To properly use these, go into either the Solution or Starter folder and run bundle install, followed by rake db:creat db:migrate db:seed.

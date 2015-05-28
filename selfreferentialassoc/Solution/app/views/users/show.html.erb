@@ -1,4 +1,19 @@
 <h2>User: <%= @user.username %></h2>
 <h3>Followers:</h3>
-
+<ul>
+	<% for user in @user.followers %>
+		<li><%=h user.username %></li>
+	<% end %>
+</ul>
+<% if current_user != @user %>
+	<div class="find-users"><%= link_to "Follow This User", follows_path(:followed_id => @user), :method => :post %></div>
+<% end %>
 <h3>Following:</h3>
+<ul>
+	<% for follow in @user.follows %>
+		<li>
+			<p><%=h follow.followed.username %></p>
+			<div class="unfollow">(<%= link_to "remove", follow, :method => :delete %>)</div>
+		</li>
+	<% end %>
+</ul>

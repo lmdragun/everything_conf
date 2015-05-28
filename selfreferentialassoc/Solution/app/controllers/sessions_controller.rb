@@ -1,4 +1,4 @@
-class SessionsController < ApplicationController::Base
+class SessionsController < ApplicationController
 
 	def new
 	end
@@ -16,7 +16,7 @@ class SessionsController < ApplicationController::Base
 
 	def destroy
 		sign_out
-redirect_to root_url
+		redirect_to root_url
 	end
 
 end
