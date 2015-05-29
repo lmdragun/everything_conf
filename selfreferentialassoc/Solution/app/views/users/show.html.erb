@@ -5,8 +5,6 @@
 		<li><%=h user.username %></li>
 	<% end %>
 </ul>
-<% if current_user != @user %>
-<% end %>
 <h3>Following:</h3>
 <ul>
 	<% for follow in @user.follows %>

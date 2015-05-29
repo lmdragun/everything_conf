@@ -22,3 +22,6 @@
 
 ### In the Starter folder, you'll find a very basic Rails app ready for self referential associations
 ### In the Solution folder, you'll find that same Rails app with Follows implemented
+
+#### presentation can be found here https://goo.gl/iP2pCE
+#### blog post and walkthrough can be found here http://lindsey.international/2015/05/29/self-referential-associations/
